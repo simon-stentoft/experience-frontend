@@ -10,7 +10,7 @@ const Home = () => {
     //fetch uses proxy in package.json to connect to backend, only works in development
     useEffect(() => {
         const fetchExperiences = async () => {
-            const response = await fetch('https://create-experience-api.onrender.com/api/experiences')
+            const response = await fetch('/api/experiences')
             const json = await response.json()
 
             console.log(response)
