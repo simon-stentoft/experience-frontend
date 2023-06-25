@@ -23,7 +23,7 @@ const ExperienceForm = () => {
 
     const experience = {title, description, location, transportation, costs, security, date, duration, image, rating, otherPlacesToVisit}
     
-    const response = await fetch('/api/experiences', {
+    const response = await fetch('https://create-experience-api.onrender.com/api/experiences', {
       method: 'POST',
       body: JSON.stringify(experience),
       headers: {
