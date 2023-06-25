@@ -8,7 +8,7 @@ const ExperienceDetails = ({ experience }) => {
     const { dispatch } = useExperiencesContext()
 
     const handleClick = async () => {
-        const response = await fetch('https://create-experience-api.onrender.com/api/experiences/' + experience._id, {
+        const response = await fetch('/api/experiences/' + experience._id, {
             method: 'DELETE'
         })
         const json = await response.json()
